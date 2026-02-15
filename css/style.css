@@ -1576,3 +1576,72 @@ html{ scroll-behavior: smooth; } /* поведение smooth описано к�
   color: #121212;
   font-weight: 700;
 }
+/* === MOBILE FIX для hero === */
+
+@media (max-width: 640px) {
+  .heroCard {
+    padding: 20px 16px 18px; /* ещё меньше отступы */
+  }
+  
+  .hero__title {
+    font-size: clamp(4px, 7vw, 20px); /* уменьшаем минимум */
+    line-height: 1.05; /* чуть больше межстрочный интервал */
+    margin-bottom: 10px;
+  }
+  
+  .hero__lead {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .hero__text {
+    font-size: 12px;
+    line-height: 1.45;
+    margin-bottom: 14px;
+  }
+  
+  .chips {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  
+  .chip {
+    height: 40px; /* чуть меньше высота */
+    font-size: 12px;
+    padding: 0 14px;
+    text-align: center;
+    white-space: nowrap; /* запрещаем перенос */
+    overflow: hidden;
+    text-overflow: ellipsis; /* троеточие если не влезает */
+  }
+}
+
+/* === FIX: убираем лишнюю высоту у скрытых элементов === */
+
+[data-reveal]:not([data-revealed]) {
+  opacity: 0;
+  /* НЕ используем visibility: hidden, оставляем только opacity */
+}
+
+/* Ускоряем появление на мобилках */
+@media (max-width: 640px) {
+  [data-reveal] {
+    transition-duration: 0.3s !important; /* быстрее анимация */
+  }
+  
+  /* Или вообще отключаем анимации на мобилках */
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+/* === FIX: принудительно показываем все элементы === */
+
+[data-reveal],
+[data-stagger] {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
