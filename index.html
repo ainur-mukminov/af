@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANTI-FISH — фишинг‑тестирование</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/img/favikon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favikon.png?v=2" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2" sizes="180x180">
+</head>
+<body>
+
+<header class="topbar" id="topbar" data-reveal="fade">
+  <div class="container topbar__inner">
+    <nav class="nav" data-stagger="chips">
+      <a class="nav__link" href="#services">Услуги</a>
+      <a class="nav__link" href="#how">Как работаем</a>
+      <a class="nav__link" href="#blog">Блог</a>
+      <a class="nav__link" href="#cases">Кейсы</a>
+      <a class="nav__link" href="#faq">FAQ</a>
+      <a class="nav__link" href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" data-reveal="section">
+    <div class="container">
+      <div class="heroCard" data-reveal="lift">
+        <div class="heroCard__content">
+          <h1 class="hero__title" data-reveal="title">
+            Практическое фишинг‑тестирование<br/>
+            и защита от социнженерии
+          </h1>
+
+          <p class="hero__lead" data-reveal="up">Безопасные симуляции атак, измеримые результаты.</p>
+
+          <p class="hero__text" data-reveal="up">
+            Проводим симуляцию кибератак социальной инженерии для выявления уязвимостей и повышения осведомлённости сотрудников.
+            По итогам — отчёт со статистикой, рекомендациями и консультация.
+          </p>
+
+          <div class="chips" data-stagger="chips">
+            <button class="chip chip--lime" type="button">Email‑фишинг</button>
+            <button class="chip chip--lime" type="button">SMS фишинг</button>
+            <button class="chip chip--purple" type="button">OSINT‑разведка</button>
+            <button class="chip chip--purple" type="button">USB‑тест</button>
+          </div>
+        </div>
+
+        <div class="heroCard__art" aria-hidden="true" data-reveal="card">
+          <img class="heroArt" src="assets/img/hero.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" data-reveal="section">
+    <div class="container">
+      <h2 class="sectionTitle" data-reveal="title">ТАРИФЫ</h2>
+
+      <div class="cards" data-stagger="cards">
+        <article class="card card--light" data-reveal="card">
+          <div class="card__head">
+            <h3 class="card__title">ANTI FISH 1.0</h3>
+            <p class="card__subtitle">
+              Базовый фишинг‑тест для компании: реалистичные материалы, статистика и рекомендации.
+            </p>
+          </div>
+
+          <ul class="card__list">
+            <li>До 25 сотрудников</li>
+            <li>Срок: 10–14 рабочих дней</li>
+            <li>Копия корпоративного портала входа (1:1 дизайн)</li>
+            <li>1 фишинг‑страница (Google/Microsoft/VK/Telegram)</li>
+            <li>Email‑рассылка до 25 писем</li>
+            <li>PDF‑отчёт 15–20 страниц + Executive Summary</li>
+            <li>Онлайн‑курс по фишингу (30 минут)</li>
+            <li>Консультация 30 минут</li>
+          </ul>
+
+          <div class="card__price">30,000 ₽</div>
+          <a class="btn btn--dark" href="#contacts">Оставить заявку</a>
+
+          <img class="card__deco" src="assets/img/1.png" alt="" aria-hidden="true" />
+        </article>
+
+        <article class="card card--purple" data-reveal="card">
+          <div class="card__head">
+            <h3 class="card__title">ANTI FISH 2.0</h3>
+            <p class="card__subtitle">
+              Стандартный пакет: больше сотрудников, больше страниц, USB‑тест и расширенная аналитика.
+            </p>
+          </div>
+
+          <ul class="card__list">
+            <li>До 50 сотрудников</li>
+            <li>Срок: 14–21 рабочий день</li>
+            <li>USB‑атака (5–10 флешек с трекингом) + отчёт</li>
+            <li>4–5 фишинг‑страниц (Google/Microsoft/VK/Telegram/Yandex)</li>
+            <li>Email‑рассылка до 50 писем</li>
+            <li>PDF‑отчёт 30–35 страниц (отделы, время суток, рейтинг уязвимости)</li>
+            <li>Сертификаты участия для всех сотрудников</li>
+            <li>Онлайн‑курс + вебинар (1 час)</li>
+            <li>Консультация 1 час (может быть групповая)</li>
+          </ul>
+
+          <div class="card__price">50,000 ₽</div>
+          <a class="btn btn--lime" href="#contacts">Оставить заявку</a>
+
+          <img class="card__deco" src="assets/img/2.png" alt="" aria-hidden="true" />
+        </article>
+
+        <article class="card card--light" data-reveal="card">
+          <div class="card__head">
+            <h3 class="card__title">ANTI FISH 3.0</h3>
+            <p class="card__subtitle">
+              Премиум: OSINT, SMS/мессенджеры, расширенные отчёты и сопровождение.
+            </p>
+          </div>
+
+          <ul class="card__list">
+            <li>До 100 сотрудников</li>
+            <li>Срок: 21–30 рабочих дней</li>
+            <li>OSINT‑разведка (сотрудники, утечки, риски)</li>
+            <li>SMS‑рассылка 15–20 сообщений + логирование переходов</li>
+            <li>Расширенный PDF‑отчёт 50–60 страниц</li>
+            <li>PPT‑презентация для руководства (10–15 слайдов)</li>
+            <li>Excel‑выгрузка данных (несколько листов)</li>
+            <li>Видео‑обзор результатов (5–10 минут)</li>
+            <li>Сопровождение 1 месяц после завершения</li>
+          </ul>
+
+          <div class="card__price">100,000 ₽</div>
+          <a class="btn btn--dark" href="#contacts">Оставить заявку</a>
+
+          <img class="card__deco" src="assets/img/3.png" alt="" aria-hidden="true" />
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="what" data-reveal="section">
+    <div class="container">
+      <h2 class="sectionTitle sectionTitle--big" data-reveal="title">ЧЕМ МЫ ЗАНИМАЕМСЯ?</h2>
+
+      <div class="whatGrid" data-stagger="cards">
+        <article class="infoCard" data-reveal="card">
+          <h3 class="infoCard__title">Фишинг‑симуляции</h3>
+          <p class="infoCard__text">
+            Проводим тестирование через email (а в расширенных пакетах — SMS/мессенджеры),
+            логируем открытия, клики и ввод данных.
+          </p>
+          <img class="infoCard__deco" src="assets/img/1.png" alt="" aria-hidden="true">
+        </article>
+
+        <article class="infoCard" data-reveal="card">
+          <h3 class="infoCard__title">USB‑тест и трекинг</h3>
+          <p class="infoCard__text">
+            Для пакетов 2.0+ готовим USB‑носители с трекингом и фиксируем подключения (в рамках согласованных сценариев).
+          </p>
+          <img class="infoCard__deco" src="assets/img/2.png" alt="" aria-hidden="true">
+        </article>
+
+        <article class="infoCard" data-reveal="card">
+          <h3 class="infoCard__title">OSINT‑разведка</h3>
+          <p class="infoCard__text">
+            В премиум‑пакете собираем открытые данные о компании и сотрудниках, ищем утечки и формируем карту рисков.
+          </p>
+          <img class="infoCard__deco" src="assets/img/3.png" alt="" aria-hidden="true">
+        </article>
+
+        <article class="infoCard infoCard--wide" data-reveal="card">
+          <h3 class="infoCard__title">Отчёты и консультация</h3>
+          <p class="infoCard__text">
+            Готовим PDF‑отчёты со статистикой и рекомендациями, проводим консультацию и обсуждаем план улучшений.
+            По завершении проекта удаляем данные и логи согласно условиям.
+          </p>
+          <img class="infoCard__deco infoCard__deco--right" src="assets/img/4.png" alt="" aria-hidden="true">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases" data-reveal="section">
+    <div class="container">
+      <h2 class="sectionTitle sectionTitle--big" data-reveal="title">КЕЙСЫ</h2>
+
+      <article class="caseCard" data-reveal="lift">
+        <div class="caseCard__left" data-stagger="cards">
+          <h3 class="case__brand" data-reveal="title">BRAND UNDER</h3>
+          <div class="case__note" data-reveal="up">Название компании изменено</div>
+          <p class="case__nda" data-reveal="up">Работаем под NDA — публикуем только обобщённые результаты без персональных данных.</p>
+
+          <h4 class="case__pack" data-reveal="up">ANTI FISH 2.0</h4>
+
+          <div class="case__summary" data-reveal="up">Краткий итог (пример):</div>
+          <ul class="case__bullets" data-reveal="up">
+            <li>Часть сотрудников открыла письмо и перешла по ссылке</li>
+            <li>Выявлены наиболее уязвимые отделы и временные окна</li>
+            <li>Сформирован план рекомендаций и обучения</li>
+          </ul>
+
+          <div class="case__hint" data-reveal="up">Хотите проверить свою компанию? Напишите — подскажем подходящий тариф.</div>
+
+          <div class="caseBtns" data-stagger="chips">
+            <a class="btn btn--lime" href="#contacts">--Проверить компанию--</a>
+            <a class="btn btn--ghost" href="./cases.html">--Ещё работы--</a>
+          </div>
+        </div>
+
+        <div class="caseCard__right" data-reveal="card">
+          <div class="dashFrame">
+            <img class="dashImg" src="assets/img/dash.png" alt="Превью отчёта/дашборда">
+          </div>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="how" id="how" data-reveal="section">
+    <div class="container">
+      <h2 class="sectionTitle sectionTitle--big" data-reveal="title">КАК МЫ РАБОТАЕМ?</h2>
+
+      <div class="stepsGrid" data-stagger="cards">
+        <article class="stepCard" data-reveal="card">
+          <div class="stepCard__body">
+            <h3 class="stepCard__title">Подготовка</h3>
+            <p class="stepCard__text">Согласовываем сценарии и объём работ, подписываем NDA, фиксируем сроки и целевые группы.</p>
+          </div>
+          <div class="stepCard__num">1</div>
+        </article>
+
+        <article class="stepCard" data-reveal="card">
+          <div class="stepCard__body">
+            <h3 class="stepCard__title">Создание материалов</h3>
+            <p class="stepCard__text">Готовим фишинг‑страницы и шаблоны писем, при необходимости — USB‑материалы и SMS‑сценарии.</p>
+          </div>
+          <div class="stepCard__num">2</div>
+        </article>
+
+        <article class="stepCard" data-reveal="card">
+          <div class="stepCard__body">
+            <h3 class="stepCard__title">Запуск кампании</h3>
+            <p class="stepCard__text">Проводим симуляцию и мониторим результаты: открытия, клики, ввод данных, подключения USB.</p>
+          </div>
+          <div class="stepCard__num">3</div>
+        </article>
+
+        <article class="stepCard" data-reveal="card">
+          <div class="stepCard__body">
+            <h3 class="stepCard__title">Анализ и отчёты</h3>
+            <p class="stepCard__text">Считаем статистику, готовим PDF (и PPT/Excel для 3.0), формируем рекомендации.</p>
+          </div>
+          <div class="stepCard__num">4</div>
+        </article>
+
+        <article class="stepCard" data-reveal="card">
+          <div class="stepCard__body">
+            <h3 class="stepCard__title">Консультация и закрытие</h3>
+            <p class="stepCard__text">Созваниваемся, обсуждаем результаты и далее удаляем данные в соответствии с регламентом.</p>
+          </div>
+          <div class="stepCard__num">5</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blogFaq" id="blog" data-reveal="section">
+    <div class="container">
+      <div class="blogFaqTop">
+        <div class="blogCol" data-reveal="up">
+          <h2 class="sectionTitle sectionTitle--big" data-reveal="title">БЛОГ</h2>
+          <div class="blogLabel" data-reveal="up">Статьи:</div>
+
+          <div class="articleList" data-stagger="cards">
+            <a class="articleItem" href="./blog.html" data-reveal="card">
+              <div>
+                <div class="articleItem__title">Фишинг в 2026: что изменилось</div>
+                <div class="articleItem__text">Новые схемы, примеры атак и что реально работает в защите.</div>
+              </div>
+              <div class="articleItem__date">3 ФЕВ 2026</div>
+            </a>
+
+            <a class="articleItem" href="./blog.html" data-reveal="card">
+              <div>
+                <div class="articleItem__title">MFA: как внедрить правильно</div>
+                <div class="articleItem__text">Короткий гайд для бизнеса: ошибки, нюансы и рекомендации.</div>
+              </div>
+              <div class="articleItem__date">5 ФЕВ 2026</div>
+            </a>
+
+            <a class="articleItem" href="./blog.html" data-reveal="card">
+              <div>
+                <div class="articleItem__title">Чек‑листы для сотрудников</div>
+                <div class="articleItem__text">Набор практических правил, которые уменьшают риск фишинга.</div>
+              </div>
+              <div class="articleItem__date">5 ФЕВ 2026</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="topicsCol" data-reveal="up">
+          <div class="topicsHead">
+            <div class="blogLabel" data-reveal="up">Темы:</div>
+            <div class="topicChips" data-stagger="chips">
+              <a class="topicChip" href="./blog.html">Фишинг атаки <span>12 статей</span></a>
+              <a class="topicChip" href="./blog.html">OSINT утечки <span>8 статей</span></a>
+              <a class="topicChip" href="./blog.html">Инструменты защиты <span>13 статей</span></a>
+              <a class="topicChip" href="./blog.html">Кейсы и статистика <span>4 статьи</span></a>
+              <a class="topicChip" href="./blog.html">Чек‑листы <span>10 статей</span></a>
+            </div>
+          </div>
+
+          <a class="btn btn--dark blogBtn" href="./blog.html">Перейти в блог</a>
+        </div>
+      </div>
+
+      <div class="faq" id="faq" data-reveal="section">
+        <h2 class="sectionTitle sectionTitle--big" data-reveal="title">FAQ</h2>
+
+        <div class="faqList" data-stagger="cards">
+          <details class="faqItem" name="faq" data-reveal="card">
+            <summary class="faqQ">Что нужно от нас для старта?</summary>
+            <div class="faqA">Список email сотрудников (или формат), скрины портала входа, логотип/цвета бренда, контакт ответственного и NDA.</div>
+          </details>
+
+          <details class="faqItem" name="faq" data-reveal="card">
+            <summary class="faqQ">Сколько длится проект?</summary>
+            <div class="faqA">В среднем 10–30 рабочих дней, точные сроки зависят от тарифа и скорости согласования материалов.</div>
+          </details>
+
+          <details class="faqItem" name="faq" data-reveal="card">
+            <summary class="faqQ">Это безопасно?</summary>
+            <div class="faqA">Да: сценарии согласуются заранее, материалы без вредоносного ПО, логируем только необходимое и удаляем данные после завершения проекта.</div>
+          </details>
+
+          <details class="faqItem" name="faq" data-reveal="card">
+            <summary class="faqQ">Какие каналы тестируете?</summary>
+            <div class="faqA">Email во всех тарифах; USB‑тест в 2.0+; SMS/мессенджеры и OSINT — в 3.0.</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta cta--center" id="contacts">
+    <div class="container">
+      <div class="ctaCard ctaCard--center">
+        <div class="ctaCenter">
+          <h2 class="cta__title cta__title--center">СВЯЖИТЕСЬ С НАМИ — ОТВЕТИМ БЫСТРО</h2>
+
+          <p class="cta__desc cta__desc--center">
+            ANTI‑FISH (ИП Мукминов Айнур Ралитович).
+            Опишите задачу в 2–3 предложениях — подскажем следующий шаг и подходящий тариф.
+          </p>
+
+          <div class="ctaActions">
+            <a class="btn btn--lime ctaMailBtn"
+               href="mailto:anti-fish@test.ru?subject=Заявка%20с%20сайта%20ANTI-FISH&body=Здравствуйте!%0A%0AМеня%20зовут:%20%0AКомпания:%20%0AКонтакт%20(TG/Email/Телефон):%20%0A%0AКоротко%20задача:%20">
+              Написать на почту
+            </a>
+
+            <button class="btn btn--ghost ctaCopyBtn" type="button"
+                    data-copy="anti-fish@test.ru" data-default-text="Скопировать почту">
+              Скопировать почту
+            </button>
+          </div>
+
+          <div class="ctaHint">
+            Email: <a class="ctaEmailLink" href="mailto:anti-fish@test.ru">anti-fish@test.ru</a> |
+            Телефон: <a class="ctaEmailLink" href="tel:+79918169393">+7 (991) 816‑93‑93</a> |
+            Telegram: <a class="ctaEmailLink" href="https://t.me/anti_fish" target="_blank" rel="noopener">t.me/anti_fish</a>
+          </div>
+
+          <div class="ctaCopied" id="ctaCopied" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cookie banner ВНЕ script -->
+  <div class="cookieBox" id="cookieBox" role="dialog" aria-live="polite" aria-label="Уведомление о cookie">
+    <div class="cookieBox__text">
+      Мы используем cookies для работы сайта и аналитики.
+      <a class="cookieBox__link" href="./privacy.html" target="_blank" rel="noopener">Подробнее</a>
+    </div>
+    <button class="cookieBox__btn" id="cookieAccept" type="button">Ок</button>
+  </div>
+
+  <footer class="footer" data-reveal="section">
+    <div class="container footer__inner" data-stagger="chips">
+      <div class="footerCol">
+        <a class="footerLink" href="#faq">FAQ</a>
+        <a class="footerLink" href="./blog.html">Блог</a>
+        <a class="footerLink" href="./cases.html">Кейсы</a>
+        <a class="footerLink" href="./privacy.html">Политика конфиденциальности</a>
+        <a class="footerLink" href="./terms.html">Пользовательское соглашение</a>
+      </div>
+
+      <div class="footerCol footerCol--center">
+        <img class="footerLogo" src="assets/img/logo.png" alt="ANTI-FISH">
+      </div>
+
+      <div class="footerCol footerCol--right">
+        <div class="footerHash">ANTI-FISH</div>
+        <a class="footerLink" href="https://t.me/anti_fish" target="_blank" rel="noopener">TG</a>
+        <a class="footerLink" href="mailto:anti-fish@test.ru">Email</a>
+      </div>
+    </div>
+
+    <div class="container footer__line"></div>
+  </footer>
+</main>
+
+<script>
+  // Copy-to-clipboard (progressive enhancement)
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('[data-copy]');
+    if (!btn) return;
+
+    const val = btn.getAttribute('data-copy');
+    const defaultText = btn.getAttribute('data-default-text') || 'Скопировать';
+
+    try {
+      if ('clipboard' in navigator) {
+        await navigator.clipboard.writeText(val);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = val;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+
+      btn.textContent = 'Скопировано';
+      setTimeout(() => (btn.textContent = defaultText), 1200);
+    } catch (err) {
+      // можно вывести сообщение в #ctaCopied при желании
+    }
+  });
+</script>
+
+<script>
+  // Cookie consent with localStorage
+  (function () {
+    const KEY = 'anti_fish_cookie_consent';
+    const box = document.getElementById('cookieBox');
+    const btn = document.getElementById('cookieAccept');
+    if (!box || !btn) return;
+
+    try {
+      if (localStorage.getItem(KEY) === 'accepted') return;
+    } catch (e) {}
+
+    box.classList.add('cookieBox--show');
+
+    btn.addEventListener('click', function () {
+      try { localStorage.setItem(KEY, 'accepted'); } catch (e) {}
+      box.classList.remove('cookieBox--show');
+      box.style.display = 'none';
+    });
+  })();
+</script>
+
+<script src="js/anim.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog — ANTI FISH</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="blogTop">
+  <div class="container blogTop__inner">
+    <div class="blogTop__brand">ANTI FISH BLOG</div>
+
+    <div class="blogTop__tabs">
+      <a class="pill pill--lime" href="index.html">Наш сайт</a>
+      <a class="pill" href="blog.html">В блог</a>
+    </div>
+  </div>
+</header>
+
+<main class="blogPage">
+  <div class="container">
+    <h1 class="blogH1">ANTI FISH BLOG</h1>
+
+    <div class="blogCats">
+      <div class="blogLabel">Категории</div>
+
+      <div class="catChips" id="catChips">
+        <button class="catChip catChip--active" type="button" data-cat="all">Все</button>
+        <button class="catChip" type="button" data-cat="phishing">Фишинг атаки <span>12 статей</span></button>
+        <button class="catChip" type="button" data-cat="osint">OSINT утечки <span>8 статей</span></button>
+        <button class="catChip" type="button" data-cat="tools">Инструменты для защиты <span>13 статей</span></button>
+        <button class="catChip" type="button" data-cat="cases">Кейсы и статистика <span>4 статьи</span></button>
+        <button class="catChip" type="button" data-cat="checklists">Чек листы <span>10 статей</span></button>
+        <button class="catChip" type="button" data-cat="news">Новости <span>50 статей</span></button>
+      </div>
+    </div>
+
+    <h2 class="blogSectionTitle" id="blogSectionTitle">Все</h2>
+
+    <div class="postsGrid postsGrid--text" id="postsGrid"></div>
+
+    <div class="blogMore">
+      <button class="btn btn--dark" id="btnMore" type="button">Показать ещё</button>
+    </div>
+  </div>
+</main>
+
+<script src="js/blog.js"></script>
+</body>
+</html>
